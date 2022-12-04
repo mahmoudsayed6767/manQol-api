@@ -9,9 +9,7 @@
       "start": "babel-node ./bin/www --presets es2015,stage-2",
       "dev": "nodemon --exec babel-node ./bin/www --presets es2015,stage-2 ",
       "lint": "eslint src",
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
-      "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
+      "test": "echo \"Error: no test specified\" && exit 1"
     },
     "execMap": {
       "ts": "ts-node --compilerOptions '{\"module\":\"commonjs\"}'"
@@ -60,9 +58,6 @@
       "passport-local": "^1.0.0",
       "password-generator": "^2.3.2",
       "request-ip": "^2.2.0",
-      "socket.io": "^3.1.2",
-      "socketio-file-upload": "^0.7.3",
-      "soket.io": "0.0.1-security",
       "twilio": "^3.77.2",
       "url": "^0.11.0",
       "winston": "^3.7.2"
