@@ -60,6 +60,9 @@
       "twilio": "^3.77.2",
       "url": "^0.11.0",
       "winston": "^3.7.2"
+    },
+    "devDependencies": {
+      "babel-cli": "^6.26.0"
     }
   }
   
