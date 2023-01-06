@@ -143,7 +143,7 @@ export default {
             let lang = i18n.getLocale(req)
             let page = +req.query.page || 1, limit = +req.query.limit || 20;
             let query = { deleted: false }
-            await Item.find(query)
+            await Item.find(query).populate(populateQuery)
                 .sort({ _id: -1 })
                 .limit(limit)
                 .skip((page - 1) * limit)
